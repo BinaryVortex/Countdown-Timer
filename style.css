@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, rgb(248, 31, 136), #30e3f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.timer {
+  background: linear-gradient(to right, #FF416C, #FF4B2B);
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.time-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.time-section span {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.separator {
+  font-size: 48px;
+  margin: 0 10px;
+}
+
+.timer::before,
+.timer::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.timer::before {
+  top: -30px;
+  left: -30px;
+}
+
+.timer::after {
+  bottom: -30px;
+  right: -30px;
+}
